@@ -8,11 +8,7 @@ Sub Board : Raspberry Pi 4B(8G)
 Used Hardware Technology: Sensor, Communications, Telemetry, PID control, PWM control
 <br/>
 Used Software Technology: Image processing(OpenCV), Deeplearning(YOLOv5), STM32F405RT, Verilog(BASYS3) 
-<br/> <br/> <br/> <br/>
-
-
-
----
+<br/> 
 ### Flowchart
 ![image](https://github.com/jang-young-hyun/Military_Drone_Project/assets/124988949/f9c4c1aa-257f-4642-be38-3137e7d92aa5)
 <br/>Drone(STM32F405RT)<br/>
