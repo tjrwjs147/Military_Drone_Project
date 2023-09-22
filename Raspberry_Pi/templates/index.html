@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="drone, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="/static/assets/css/main.css">
+  
+  <style>
+    h2 {
+        position: absolute;
+        top: 100px;
+        left: 350px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    h4 {
+        position: absolute;
+        top: 120px;
+        left: 80px;
+        margin-top: 0;
+        margin-left: 0;
+        font-size: 32px;
+    }
+    input[type="submit"] {
+        position: relative; 
+        bottom: -80px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="/static/assets/img/logo.png" alt="Drone">
+    <p>Drone</p>
+  </a>
+  <p class="device-notification--message">This military reconnaissance drone development project was carried out based on M-HIVE's drone lecture.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="/static/assets/img/logo.png" alt="Drone">
+            <p>Drone</p>
+          </a>
+          <button class="header--cta cta">Detail More</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Detects</span></li>
+            <li><span>Works</span></li>
+            <li><span>Members</span></li>
+            <li><span>Detail More</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Military<br>Detecting Drone<br>Project</h1>
+                <button class="cta">Detail More
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="/static/assets/img/introduction-visual.png" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>STM32F4 &amp; ARM-CORTEX M Serise</h3>
+                  <p>Implementation of functions, including system structure design, sensor data input, posture calculation, PID control, and fail-safe safety device.</p>
+                </a>
+                <a href="#0">
+                  <h3>RaspberryPi 4B</h3>
+                  <p>Through the chipset board, the output of the image camera and thermal imaging camera is processed with OpenCV, and object recognition is performed using YOLO v5.</p>
+                </a>
+                <a href="#0">
+                  <h3>SoC &amp; Xilinx Vivado</h3>
+                  <p>Manufacturing drone hangar hardware to store drones. Implementation of hangar door opening and closing device using UART communication.</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          
+                    
+          
+          
+          
+          
+          <!-- 2. Detects -->
+          <li class="l-section section">
+            <div class="work">
+              <h2>Detecting Video</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div>
+                        <img id="video_feed_pi" src="{{ url_for('video_feed_pi') }}" width="480" height="480" alt="Pi Cam">
+                      </div>
+                      </a>
+                    <p>Pi Cam</p>
+                    <p>Normal Image.</p>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div>
+                        <img id="thermal_feed_ir" src="{{ url_for('thermal_feed') }}" width="200" height="200" alt="Thermal Cam">
+                      </div>
+                      </a>
+                      <p>Thermal Cam</p>
+                      <p>Detecting energy (heat),<br>display thermal image.</p>
+                    
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </li>
+
+          
+          
+          
+
+
+          <!-- 3. works -->
+          <li class="l-section section">
+            <div class="work">
+              <h2>Project<br>videos and photos</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <video width="100%" height="auto" controls>
+                          <source src="static/assets/image/drone_video1.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <p class="slider--item-title">Drone_Video1</p>
+                      <p class="slider--item-description">Normal Video.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <video width="100%" height="auto" controls>
+                          <source src="static/assets/image/drone_video2.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <p class="slider--item-title">Drone_Video2</p>
+                      <p class="slider--item-description">Video from YOLOv5 and detecting objects.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <video width="100%" height="auto" controls>
+                          <source src="static/assets/image/drone_video3.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      <p class="slider--item-title">Drone_Video3</p>
+                      <p class="slider--item-description">Detecting energy (heat) and displaying thermal video.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          
+          
+          <!-- 4. members -->
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                
+                <!-- Jang Young Hyun -->  
+                <div class="modal" style="width: 180px; height: 220px; position: absolute; top: 100px; left: 50px;">
+                  <div class="modal--information">
+                    <p>Jang Young Hyun</p>
+                    <a>Leader</a>
+                    <a>Drone H/W, Drone S/W,<br>Image process(OpenCV)</a>                    
+                    <a href="mailto:ouremail@gmail.com">lsdyk0017@gmail.com</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="mailto:ouremail@gmail.com">Contact</a></li>
+                  </ul>
+                </div>
+                
+                <!-- Kim Ki Young --> 
+                <div class="modal" style="width: 180px; height: 220px; position: absolute; top: 100px; left: 450px;">
+                  <div class="modal--information">
+                    <p>Kim Ki Young</p>
+                    <a>Follower</a>
+                    <a>Drone H/W, PID controll</a>                    
+                    <a href="mailto:ouremail@naver.com">tyzmxpa@naver.com</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="mailto:ouremail@gmail.com">Contact</a></li>
+                  </ul>
+                </div>
+                
+                <!-- Kim So Yeong --> 
+                <div class="modal" style="width: 180px; height: 220px; position: absolute; top: 100px; left: 850px;">
+                  <div class="modal--information">
+                    <p>Kim So Yeong</p>
+                    <a>Follower</a>
+                    <p>Drone H/W,GPS protocol,<br>Webpage(HTML),<br>Image process(YOLOv5)</p>
+                    <a href="mailto:ouremail@gmail.com">741852ksy@gmail.com</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="mailto:ouremail@gmail.com">Contact</a></li>
+                  </ul>
+                </div>
+                
+                <!-- Park Sung Woo --> 
+                <div class="modal" style="width: 180px; height: 220px; position: absolute; top: 500px; left: 50px;">
+                  <div class="modal--information">
+                    <p>Park Sung Woo</p>
+                    <a>Follower</a>
+                    <a>Drone H/W,<br>Experiment,<br>Varification</a>
+                    <a href="mailto:ouremail@gmail.com">01093418672@gmail.com</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="mailto:ouremail@gmail.com">Contact</a></li>
+                  </ul>
+                </div>
+                
+                <!-- Lee Jae Min --> 
+                <div class="modal" style="width: 180px; height: 220px; position: absolute; top: 500px; left: 450px;">
+                  <div class="modal--information">
+                    <p>Lee Jae Min</p>
+                    <a>Follower</a>
+                    <a>Research</a>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="mailto:ouremail@gmail.com">Contact</a></li>
+                  </ul>
+                </div>
+                
+                <!-- Hong So Yeon --> 
+                <div class="modal" style="width: 180px; height: 220px; position: absolute; top: 500px; left: 850px;">
+                  <div class="modal--information">
+                    <p>Hong So Yeon</p>
+                    <a>Follower</a>
+                    <a>Telematry protocol, FPGA(sensor)</a>
+                    <a href="mailto:ouremail@naver.com">soyeon0208@naver.com</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="mailto:ouremail@gmail.com">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          
+          
+          
+          
+          <!-- 5. Detail more -->                                                   
+          <li class="l-section section">
+            <div class="hire">
+              <h4>If  you want more information!</h4>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" type="checkbox">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Jang Young Hyun
+                    </label>
+                    <script>
+                      document.getElementById('opt-1').addEventListener('click', function() {
+                        window.location.href = 'https://github.com/jang-young-hyun?tab=repositories';
+                      });
+                    </script>
+                    
+                    
+                    <input id="opt-2" type="checkbox">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Kim Ki Young
+                    </label>
+                    <script>
+                      document.getElementById('opt-2').addEventListener('click', function() {
+                        window.location.href = 'https://github.com/Youngki96';
+                      });
+                    </script>
+                    
+                    <input id="opt-3" type="checkbox">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Kim So Yeong
+                    </label>
+                    <script>
+                      document.getElementById('opt-3').addEventListener('click', function() {
+                        window.location.href = 'https://github.com/Kimssoooooo';
+                      });
+                    </script>
+                    
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-4" type="checkbox">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Park Sung Woo
+                    </label>
+                    <script>
+                      document.getElementById('opt-4').addEventListener('click', function() {
+                        window.location.href = 'https://github.com/parksungwoo659?tab=repositories';
+                      });
+                    </script>
+                    
+                    <input id="opt-5" type="checkbox" >
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Lee Jae Min
+                    </label>
+                    <script>
+                      document.getElementById('opt-5').addEventListener('click', function() {
+                        window.location.href = 'https://github.com/adlwoals23?tab=repositories';
+                      });
+                    </script>
+                    
+                    <input id="opt-6" type="checkbox" >
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Hong So Yeon
+                    </label>
+                    <script>
+                      document.getElementById('opt-6').addEventListener('click', function() {
+                        window.location.href = 'https://github.com/Hongsoyeon?tab=repositories';
+                      });
+                    </script>
+                    
+                  </span>
+                </div>
+                </form>
+              <form class="work-request" action="https://github.com">
+                <div class="work-request--options">
+                    <input type="submit" value="Go to Github" id="githubButton">
+                </div>
+            </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Detects</li>
+    <li>Works</li>
+    <li>Members</li>
+    <li>Detail More</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/static/assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="/static/assets/js/functions-min.js"></script>
+</body>
+</html>
