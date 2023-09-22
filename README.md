@@ -2,11 +2,9 @@
 ## Military object detecting drone development project through STM32F405-based Raspberry Pi 4 image processing
 
 Main Board : STM32F405RT (This MCU is customized by M-HIVE)
-
-
+<br/>
 Sub Board : Raspberry Pi 4B(8G)
-
-
+<br/>
 Used Hardware Technology: Sensor, Communications, Telemetry, PID control, PWM control
 
 
