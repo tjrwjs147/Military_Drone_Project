@@ -9,7 +9,7 @@ Used Hardware Technology: Sensor, Communications, Telemetry, PID control, PWM co
 <br/>
 Used Software Technology: Image processing(OpenCV), Deeplearning(YOLOv5), STM32F405RT, Verilog(BASYS3) 
 <br/> 
-Project Period: 2023.08.08 to 2023.09.15
+Project Period: 2023.08.08 ~ 2023.09.15
 <br/> 
 ### Flowchart
 ![image](https://github.com/jang-young-hyun/Military_Drone_Project/assets/124988949/f9c4c1aa-257f-4642-be38-3137e7d92aa5)
